@@ -31,17 +31,44 @@ try {
   // Libreria de sobreescritura
   const methodOverride = require("method-override");
 
-  // AppErrorConection Requerimiento
-  const AppErrorConection = require("./controllers/AppErrorConection");
 
   // CORS
   const cors = require("cors");
+  app.use(methodOverride("_method"));
+  app.use(express.urlencoded({ extended: true }));
+  app.use(express.json());
+
+  const whitelist = ["https://edvardks.com", "localhost:3014"];
+  const corsOptions = {
+    origin: (origin, callback) => {
+      if (whitelist.indexOf(origin) !== -1) {
+        callback(null, true);
+      } else {
+        callback("CORS DENEGA ESTA SOLICITUD");
+      }
+    },
+    optionsSuccessStatus: 204,
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false
+
+  };
+
+  app.use(cors(corsOptions));
+
+
+  // Indicamos las rutas de las rutas
+  app.use(`/${version}/pedidos`, pedidoRoutes);
+  app.use(`/${version}/est`, estadisticasRoutes);
+
+  // AppErrorConection Requerimiento
+  const AppErrorConection = require("./controllers/AppErrorConection");
+
+
 
   //Morgan
   const morgan = require("morgan");
 
   // Uses
-  app.use(cors());
 
   app.use(methodOverride("_method"));
   app.use(express.urlencoded({ extended: true }));
@@ -73,7 +100,7 @@ try {
       .catch(function (err) {
         throw new AppErrorConection("MongoDB Atlas", 500);
       });
-      
+
     try {
       dbConnMySQL.connect(function (err) {
         console.log("...Conectando con MySql FreeSQLdataBase...");
@@ -91,7 +118,9 @@ try {
   });
 } catch (err) {
   console.log("Ha ocurrido un Error en la línea general del programa.");
-  logger.error.fatal(`Ha ocurrido un Error en la línea general del programa. ${err}`);
+  logger.error.fatal(
+    `Ha ocurrido un Error en la línea general del programa. ${err}`
+  );
   setTimeout(() => {
     process.exit(0);
   }, "1997");
