@@ -7,7 +7,8 @@ const port = process.env.port || 3014;
 // https://data.mongodb-api.com/app/data-frkwh/endpoint/data/v1
 const mongoose = require("mongoose");
 const userpass = "adrieduian";
-const mongoAtlasUri = `mongodb+srv://${userpass}:${userpass}@tpdb.7ut31tp.mongodb.net/test`;
+//const mongoDB = `mongodb+srv://${userpass}:${userpass}@tpdb.7ut31tp.mongodb.net/test`;
+const mongoDB = `mongodb://127.0.0.1:27017/telepiPedidos_BD`;
 let conexionMongoDB = false;
 
 // Datos de conexión con MySql
@@ -30,6 +31,9 @@ const AppError = require("./controllers/AppError")
 // CORS
 const cors = require("cors"); 
 
+//Morgan
+const morgan = require("morgan");
+
 // Uses
 app.use(cors());
 acho
@@ -47,7 +51,7 @@ app.use(`/${version}/est`, estadisticasRoutes);
 
 // Conectamos el servidor en la nube de MongoDB Atlas
 async function conectarMongoDB() {
-  return mongoose.connect(mongoAtlasUri);
+  return mongoose.connect(mongoDB);
 }
 
 // Levantamos servidor, comprobamos conexión con Mongoose y MySql
