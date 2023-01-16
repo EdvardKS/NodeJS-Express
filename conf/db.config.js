@@ -1,4 +1,5 @@
 const { connect } = require("http2");
+const AppErrorConection = require("../controllers/AppErrorConection");
 const mysql = require("mysql"); //npm i mysql
 
 // Host: sql7.freemysqlhosting.net
@@ -23,19 +24,6 @@ const dbConn = mysql.createConnection({
 })
 
 //Si no establece la conexión, tumbará el servidor
-dbConn.establishConexion = () => {
 
-  dbConn.connect(function (err) {
-    if (err) {
-      console.log(err);
-      process.exit(0);
-    } else {
-      console.log(`\n--------------------------------------\n`);
-      console.log("Conectado con MySql FreeSQLdataBase...");
-      console.log(`\n--------------------------------------\n`);
-      return true
-    } 
-  })
-}
 
 module.exports = dbConn;

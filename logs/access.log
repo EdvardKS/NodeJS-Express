@@ -1,0 +1,1 @@
+[2023-01-16T16:57:09.644] [INFO] access - Error al conectar con Atlas MongoDB. 1 Desc: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
