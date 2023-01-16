@@ -55,11 +55,6 @@ try {
 
   app.use(cors(corsOptions));
 
-
-  // Indicamos las rutas de las rutas
-  app.use(`/${version}/pedidos`, pedidoRoutes);
-  app.use(`/${version}/est`, estadisticasRoutes);
-
   // AppErrorConection Requerimiento
   const AppErrorConection = require("./controllers/AppErrorConection");
 
