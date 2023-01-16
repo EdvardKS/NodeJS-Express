@@ -12,7 +12,6 @@ class AppErrorConection extends Error{
             process.exit(0);
         }, "1997");
     }
-    
 }
 
 module.exports = AppErrorConection

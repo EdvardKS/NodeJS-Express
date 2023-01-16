@@ -9,5 +9,6 @@ Atento a las versiones.
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "ovh": "^2.0.3",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "log4js": "^6.7.1",
 ]
