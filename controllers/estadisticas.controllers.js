@@ -1,7 +1,8 @@
 const Ventas = require("../models/ventas.model")
+let {wrapAsync} = require("../middlewares/wrapAsync.mw")
 
 // #region FIND ALL
-exports.findAllVentas = async function(req,res){
+exports.findAllVentas = wrapAsync(async function(req,res){
     await Ventas.findAllVentas(function(err,ventas){
         if(err){ 
             res.send(err)
@@ -9,12 +10,12 @@ exports.findAllVentas = async function(req,res){
             res.send(ventas)            
         }   
     })
-}
+})
 // #endregion
 
 // #region FIND BY ID
 
-exports.findByIdVentas = async function(req,res){
+exports.findByIdVentas = wrapAsync(async function(req,res){
     const { id } = req.params
     await Ventas.findByIdVentas(id,function(err,venta){
         if(err){
@@ -23,13 +24,13 @@ exports.findByIdVentas = async function(req,res){
             res.send(venta)            
         }  
     })
-}
+})
 
 // #endregion
 
 // #region CREATE
 
-exports.createVentas = async function(req,res){
+exports.createVentas = wrapAsync(async function(req,res){
     const newVenta = new Ventas(req.body)
     await Ventas.createVentas(newVenta,function(err,venta){
         if(err){
@@ -39,13 +40,13 @@ exports.createVentas = async function(req,res){
             res.send(venta)            
         } 
     })
-}
+})
 
 // #endregion
 
 // #region UPDATE
 
-exports.updateVentas = async function(req,res){
+exports.updateVentas = wrapAsync(async function(req,res){
     const venta = new Ventas(req.body)
     const { id } = req.params
     await Ventas.updateVentas(id,venta,function(err,venta_updated){
@@ -56,13 +57,13 @@ exports.updateVentas = async function(req,res){
             res.send(venta_updated)            
         } 
     })
-}
+})
 
 // #endregion
 
 // #region DELETE
 
-exports.deleteVentas = async function(req,res){
+exports.deleteVentas = wrapAsync(async function(req,res){
     const { id } = req.params
     Ventas.deleteVentas(id,function(err,venta_delete){
         if(err){
@@ -72,6 +73,6 @@ exports.deleteVentas = async function(req,res){
             res.send(venta_delete)            
         }
     })
-}
+})
 
 // #endregion

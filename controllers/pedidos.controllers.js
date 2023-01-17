@@ -1,10 +1,11 @@
 const Pedido = require("../models/pedido.model")
+let {wrapAsync} = require("../middlewares/wrapAsync.mw")
 
 //Rutas
 /* ------- CRUD de Moongose - Pedidos -------- */
 
 //Buscar todos
-exports.buscarTodos = async function(req,res){
+exports.buscarTodos = wrapAsync(async function(req,res){
     await Pedido.buscarTodos(function(err,pedidos){
         if(err){
             res.send(err)
@@ -12,10 +13,10 @@ exports.buscarTodos = async function(req,res){
             res.send(pedidos)            
         }   
     })
-}
+})
 
 //Buscar por id
-exports.buscarId = async function(req,res){
+exports.buscarId = wrapAsync(async function(req,res){
     const { id } = req.params
     
     await Pedido.buscarId(id,function(err,pedido){
@@ -25,11 +26,11 @@ exports.buscarId = async function(req,res){
             res.send(pedido)            
         } 
     })
-}
+})
 
 
 //Crear pedido
-exports.crear = async function(req,res){
+exports.crear = wrapAsync(async function(req,res){
     const newPedido = new Pedido(req.body)
     await Pedido.crear(newPedido,function(err,pedido){
         if(err){
@@ -39,10 +40,10 @@ exports.crear = async function(req,res){
             res.send(pedido)            
         } 
     })
-}
+})
 
 //Actualizar Pedido
-exports.actualizar = async function(req,res){
+exports.actualizar = wrapAsync(async function(req,res){
     const pedido = new Pedido(req.body)
     const { id } = req.params
     await Pedido.actualizar(id,pedido,function(err,pedido_updated){
@@ -53,10 +54,10 @@ exports.actualizar = async function(req,res){
             res.send(pedido_updated)            
         } 
     })
-}
+})
 
 //Borrar Pedido
-exports.borrar = async function(req,res){
+exports.borrar = wrapAsync(async function(req,res){
     const { id } = req.params
     Pedido.borrar(id,function(err,pedido_deleted){
         if(err){
@@ -66,4 +67,4 @@ exports.borrar = async function(req,res){
             res.send(pedido_deleted)            
         }
     })
-}
+})

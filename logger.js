@@ -1,4 +1,3 @@
-//winston (otra librería para logs de express)
 const log4js = require("log4js") //npm i log4js
 
 log4js.configure({

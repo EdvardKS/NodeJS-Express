@@ -30,41 +30,24 @@ try {
 
   // Libreria de sobreescritura
   const methodOverride = require("method-override");
+  app.use(methodOverride("_method"));
 
 
   // CORS
   const cors = require("cors");
-  app.use(methodOverride("_method"));
-  app.use(express.urlencoded({ extended: true }));
-  app.use(express.json());
-
-  const whitelist = ["https://edvardks.com", "localhost:3014"];
-  const corsOptions = {
-    origin: (origin, callback) => {
-      if (whitelist.indexOf(origin) !== -1) {
-        callback(null, true);
-      } else {
-        callback("CORS DENEGA ESTA SOLICITUD");
-      }
-    },
-    optionsSuccessStatus: 204,
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    preflightContinue: false
-
-  };
-
-  app.use(cors(corsOptions));
-
-  // AppErrorConection Requerimiento
+  app.use(cors());
+  
+  // Control de Errores Requerimiento
   const AppErrorConection = require("./controllers/AppErrorConection");
-
-
-
+  const AppError = require("./controllers/AppError")
+  let {wrapAsync} = require("./middlewares/wrapAsync.mw")
+  
   //Morgan
   const morgan = require("morgan");
-
+  
   // Uses
-
+  app.use(express.urlencoded({ extended: true }));
+  app.use(express.json());
   app.use(methodOverride("_method"));
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
@@ -82,15 +65,18 @@ try {
     return mongoose.connect(mongoDB);
   }
 
+
+
   // Levantamos servidor, comprobamos conexión con Mongoose y MySql
   app.listen(port, async () => {
     console.log(`\n\n\n\nEscuchando en el puerto ${port} \n`);
-
+    logger.access.info("Se ha intentado establecer conexion")
     console.log("...Conectando con MongoDB Atlas... \n");
     await conectarMongoDB()
       .then(function () {
         console.log("Conectado con MongoDB Atlas...\n\n");
         conexionMongoDB = true;
+        logger.access.debug("Conexion establecida con MongoDB")
       })
       .catch(function (err) {
         throw new AppErrorConection("MongoDB Atlas", 500);
@@ -105,6 +91,7 @@ try {
         } else {
           console.log("Conectado con MYSql...");
           conexionMySqlDB = true;
+          logger.access.debug("Conexion establecida con MySQL")
         }
       });
     } catch (err) {
