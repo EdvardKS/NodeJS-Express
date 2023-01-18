@@ -5,5 +5,5 @@ class AppError extends Error{
         this.status = status
     }
 }
-
+//prueba
 module.exports = AppError
