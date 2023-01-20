@@ -79,8 +79,8 @@ exports.borrar = wrapAsync(async function (req, res) {
                 logger.error.error(`Ha ocurrido un Error borrando el pedido con ID: ${id} :: El pedido deseado no existe por ese ID`)
             } else {
                 logger.access.info("Se ha borrado el pedido con id: " + id)
+                res.send(pedido_deleted)
             }
-            res.send(pedido_deleted)
         }
     })
 })

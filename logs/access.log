@@ -1,0 +1,16 @@
+[2023-01-20T16:18:39.532] [INFO] access - Se ha intentado establecer conexion
+[2023-01-20T16:19:14.469] [INFO] access - Se ha intentado establecer conexion
+[2023-01-20T16:19:14.549] [DEBUG] access - Conexion establecida con MySQL
+[2023-01-20T16:19:15.187] [DEBUG] access - Conexion establecida con MongoDB
+[2023-01-20T16:32:30.986] [INFO] access - Se ha intentado establecer conexion
+[2023-01-20T16:32:31.016] [DEBUG] access - Conexion establecida con MySQL
+[2023-01-20T16:32:32.059] [DEBUG] access - Conexion establecida con MongoDB
+[2023-01-20T16:32:45.172] [INFO] access - Se ha intentado establecer conexion
+[2023-01-20T16:32:45.199] [DEBUG] access - Conexion establecida con MySQL
+[2023-01-20T16:32:45.847] [DEBUG] access - Conexion establecida con MongoDB
+[2023-01-20T16:49:25.608] [INFO] access - Se ha intentado establecer conexion
+[2023-01-20T16:49:25.633] [DEBUG] access - Conexion establecida con MySQL
+[2023-01-20T16:49:26.320] [DEBUG] access - Conexion establecida con MongoDB
+[2023-01-20T16:49:47.669] [INFO] access - Se ha intentado establecer conexion
+[2023-01-20T16:49:47.697] [DEBUG] access - Conexion establecida con MySQL
+[2023-01-20T16:49:48.439] [DEBUG] access - Conexion establecida con MongoDB
