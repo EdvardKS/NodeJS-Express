@@ -1,5 +1,5 @@
 const Ventas = require("../models/ventas.model")
-let {wrapAsync} = require("../middlewares/wrapAsync.mw")
+let wrapAsync = require("../middlewares/wrapAsync.mw")
 
 // #region FIND ALL
 exports.findAllVentas = wrapAsync(async function(req,res){

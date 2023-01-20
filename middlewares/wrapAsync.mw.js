@@ -11,4 +11,4 @@ function wrapAsync(fn){
 
 //prueba
 
-module.exports = wrapAsync()
+module.exports = wrapAsync

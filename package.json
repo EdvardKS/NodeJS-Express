@@ -1,7 +1,7 @@
 {
   "name": "back_end",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dependencias a instalar.\r Atento a las versiones.\r [\r     \"cors\": \"^2.8.5\",\r     \"ejs\": \"^3.1.8\",\r     \"express\": \"^4.18.2\",\r     \"fs\": \"^0.0.1-security\",\r     \"log4js\": \"^6.7.1\",\r     \"method-override\": \"^3.0.0\",\r     \"mongoose\": \"^6.8.0\",\r     \"morgan\": \"^1.10.0\",\r     \"mysql\": \"^2.18.1\",\r     \"ovh\": \"^2.0.3\",\r     \"path\": \"^0.12.7\",\r     \"log4js\": \"^6.7.1\",\r ]",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,15 +9,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
     "log4js": "^6.7.1",
     "method-override": "^3.0.0",
-    "mongoose": "^6.8.0",
+    "mongoose": "^6.8.4",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "ovh": "^2.0.3",
+    "nodemon": "^2.0.20",
     "path": "^0.12.7"
   }
 }

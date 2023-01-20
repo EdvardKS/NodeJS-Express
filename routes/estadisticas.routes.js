@@ -3,7 +3,9 @@ const express = require("express");
 const router = express.Router();
 
 //Obtener todos los est 
-router.get("/ventas", estadisticasController.findAllVentas);
+router.get("/ventas", (req,res) => {
+    
+} ,estadisticasController.findAllVentas);
 //Obtener todos un est por ID
 router.get("/ventas/:id", estadisticasController.findByIdVentas);
 //Crear  

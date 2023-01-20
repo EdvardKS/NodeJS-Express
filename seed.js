@@ -1,9 +1,10 @@
 const mongoose = require("mongoose")
-const userpass = "adrieduian";
-const mongoAtlasUri = `mongodb+srv://${userpass}:${userpass}@tpdb.7ut31tp.mongodb.net/test`;
+// const userpass = "adrieduian";
+// const mongoAtlasUri = `mongodb+srv://${userpass}:${userpass}@tpdb.7ut31tp.mongodb.net/test`;
+const mongoDB = `mongodb://127.0.0.1:27017/telepiPedidos_BD`;
 const Pedido = require("./models/pedido.model")
 
-mongoose.connect(mongoAtlasUri)
+mongoose.connect(mongoDB)
 .then(()=>{
     console.log("Mongoose is connected")
 })

@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 //Obtener todos los pedidos
-router.get("/", pedidoController.buscarTodos);
+router.get("/",pedidoController.buscarTodos);
 //Obtener un padido por ID
 router.get("/:id", pedidoController.buscarId);
 //Crear un Pedido
