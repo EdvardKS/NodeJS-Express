@@ -1,7 +1,8 @@
 const Pedido = require("../models/pedido.model");
 let wrapAsync = require("../middlewares/wrapAsync.mw");
 const logger = require("../logger");
-//
+
+
 //Rutas
 /* ------- CRUD de Moongose - Pedidos -------- */
 
@@ -79,12 +80,12 @@ exports.borrar = wrapAsync(async function (req, res) {
     const { id } = req.params
     Pedido.borrar(id, function (err, pedido_deleted) {
         if (err) {
-            logger.error.info(`Ha ocurrido un Error borrando el pedido con ID: ${id} :: ${err}`)
+            logger.error.error(`Ha ocurrido un Error borrando el pedido con ID: ${id} :: ${err}`)
             res.send(err)
         } else {
             console.log(pedido_deleted)
             if (pedido_deleted == null) {
-                logger.error.error(`Ha ocurrido un Error borrando el pedido con ID: ${id} :: El pedido deseado no existe por ese ID`)
+                logger.error.info(`Ha ocurrido un Error borrando el pedido con ID: ${id}`)
             } else {
                 logger.access.info("Se ha borrado el pedido con id: " + id)
                 res.send(pedido_deleted)
