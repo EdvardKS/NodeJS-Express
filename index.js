@@ -40,6 +40,7 @@ try {
 
   //Morgan
   const morgan = require("morgan");
+  app.use(morgan("combined"));
 
   // Uses
   app.use(express.urlencoded({ extended: true }));
@@ -62,14 +63,20 @@ try {
   // FIN USO DE COOKIES Y SESIONES
 
   // Indicamos las rutas de las rutas
-  app.use(`/${version}/pedidos`, pedidoRoutes);
-  app.use(`/${version}/est`, estadisticasRoutes);
-
   app.use(
     `/${version}/pedidos`,
     morgan("combined", {
-      stream: fs.createWriteStream("./access.log", { flags: "a" }),
-    })
+      stream: fs.createWriteStream("./logs/access.log", { flags: "a" }),
+    }),
+    pedidoRoutes
+  );
+
+  app.use(
+    `/${version}/est`,
+    morgan("combined", {
+      stream: fs.createWriteStream("./logs/access.log", { flags: "a" }),
+    }),
+    estadisticasRoutes
   );
 
   // Conectamos el servidor en la nube de MongoDB Atlas
@@ -79,7 +86,6 @@ try {
 
   // Levantamos servidor, comprobamos conexión con Mongoose y MySql
   app.listen(port, async () => {
-    
     logger.access.info("Se ha intentado establecer conexion");
     console.log("...Conectando con MongoDB Atlas... \n");
 
