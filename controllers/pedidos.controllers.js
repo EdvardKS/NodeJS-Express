@@ -26,9 +26,7 @@ exports.buscarId = async function (req, res) {
   const { id } = req.params;
   await Pedido.buscarId(id, function (err, pedido) {
     if (err) {
-      logger.error.info(
-        `Ha ocurrido un Error buscando el pedido con ID: ${id} :: ${err}`
-      );
+      logger.error.info(`Ha ocurrido un Error buscando el pedido con ID: ${id} :: ${err}`);
       res.send(err);
     } else {
       logger.access.info("Se ha buscado el pedido con id: " + id);

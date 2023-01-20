@@ -1,2 +1,81 @@
 [2023-01-20T16:18:39.566] [FATAL] error - Error en la connectividad con :: MYSql 1 :: 500
 [2023-01-20T16:33:19.141] [INFO] error - Error atravesando wrapAsync :: ReferenceError: logger is not defined
+[2023-01-20T19:21:24.022] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2df :: { "codError":"500", "desc":"CastError: Cast to ObjectId failed for value "63a1e8307eff2df" (type string) at path "_id" for model "Pedido"" }
+[2023-01-20T19:21:24.024] [ERROR] error - Ha ocurrido un Error en pedidos.model :: CastError: Cast to ObjectId failed for value "63a1e8307eff2df" (type string) at path "_id" for model "Pedido"
+
+
+[2023-01-20T20:11:27.236] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: { "codError":"500", "desc":"TypeError: next is not a function" }
+[2023-01-20T20:11:27.243] [ERROR] error - Ha ocurrido un Error en pedidos.model :: TypeError: next is not a function
+[2023-01-20T20:11:31.679] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: { "codError":"500", "desc":"TypeError: next is not a function" }
+[2023-01-20T20:11:31.680] [ERROR] error - Ha ocurrido un Error en pedidos.model :: TypeError: next is not a function
+[2023-01-20T20:11:32.278] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: { "codError":"500", "desc":"TypeError: next is not a function" }
+[2023-01-20T20:11:32.279] [ERROR] error - Ha ocurrido un Error en pedidos.model :: TypeError: next is not a function
+[2023-01-20T20:13:51.575] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:13:51.579] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:14:24.627] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:14:24.632] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:14:26.434] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:14:26.435] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:14:41.715] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:14:41.715] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:01.560] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:01.564] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:02.895] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:02.895] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:03.476] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:03.477] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:03.819] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:03.821] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:04.149] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:04.150] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:04.490] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:04.491] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:04.574] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:04.577] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:36.005] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:15:36.009] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+
+
+
+[2023-01-20T20:16:32.032] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da9 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:16:32.037] [ERROR] error - "codError":"500" :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:17:58.240] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da9 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:17:58.245] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:17:59.550] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da9 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:17:59.551] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:18:00.587] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da9 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:18:00.588] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:18:33.459] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: Ha ocurrido un Error en pedidos.model :: TypeError: json is not a function
+[2023-01-20T20:18:33.463] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: json is not a function
+[2023-01-20T20:18:35.546] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: Ha ocurrido un Error en pedidos.model :: TypeError: json is not a function
+[2023-01-20T20:18:35.547] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: json is not a function
+[2023-01-20T20:18:36.455] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: Ha ocurrido un Error en pedidos.model :: TypeError: json is not a function
+[2023-01-20T20:18:36.456] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: json is not a function
+[2023-01-20T20:18:37.160] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: Ha ocurrido un Error en pedidos.model :: TypeError: json is not a function
+[2023-01-20T20:18:37.161] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: json is not a function
+[2023-01-20T20:18:39.423] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: Ha ocurrido un Error en pedidos.model :: TypeError: json is not a function
+[2023-01-20T20:18:39.423] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: json is not a function
+[2023-01-20T20:18:40.161] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: Ha ocurrido un Error en pedidos.model :: TypeError: json is not a function
+[2023-01-20T20:18:40.162] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: json is not a function
+[2023-01-20T20:18:55.595] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: Ha ocurrido un Error en pedidos.model :: SyntaxError: Unexpected token o in JSON at position 1
+[2023-01-20T20:18:55.600] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: SyntaxError: Unexpected token o in JSON at position 1
+[2023-01-20T20:18:58.007] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: Ha ocurrido un Error en pedidos.model :: SyntaxError: Unexpected token o in JSON at position 1
+[2023-01-20T20:18:58.008] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: SyntaxError: Unexpected token o in JSON at position 1
+[2023-01-20T20:18:59.572] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da6 :: Ha ocurrido un Error en pedidos.model :: SyntaxError: Unexpected token o in JSON at position 1
+[2023-01-20T20:18:59.574] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: SyntaxError: Unexpected token o in JSON at position 1
+[2023-01-20T20:20:06.772] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:20:06.774] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:20:08.165] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:20:08.166] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:20:08.919] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:20:08.920] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:20:30.287] [FATAL] error - Ha ocurrido un Error en la línea general del programa. SyntaxError: Unexpected token '}'
+[2023-01-20T20:20:42.490] [INFO] error - Error atravesando wrapAsync :: ReferenceError: resultado is not defined
+[2023-01-20T20:21:13.022] [FATAL] error - Ha ocurrido un Error en la línea general del programa. SyntaxError: Unexpected token 'try'
+[2023-01-20T20:21:20.034] [INFO] error - Ha ocurrido un Error buscando el pedido con ID: 63a1e8307eff2dfc8d310da7 :: Ha ocurrido un Error en pedidos.model :: TypeError: Cannot convert undefined or null to object :: JSON-> null
+[2023-01-20T20:21:20.042] [ERROR] error - "codError":"401" :: Ha ocurrido un Error en pedidos.model By ID :: TypeError: Cannot convert undefined or null to object
+[2023-01-20T20:21:53.590] [FATAL] error - Ha ocurrido un Error en la línea general del programa. SyntaxError: missing ) after argument list
+[2023-01-20T20:33:23.441] [FATAL] error - Ha ocurrido un Error en la línea general del programa. SyntaxError: missing ) after argument list
+[2023-01-20T20:33:30.506] [FATAL] error - Ha ocurrido un Error en la línea general del programa. SyntaxError: missing ) after argument list
+[2023-01-20T20:33:35.663] [FATAL] error - Ha ocurrido un Error en la línea general del programa. SyntaxError: missing ) after argument list
+[2023-01-20T20:33:37.447] [FATAL] error - Ha ocurrido un Error en la línea general del programa. SyntaxError: missing ) after argument list
