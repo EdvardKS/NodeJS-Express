@@ -1,5 +1,6 @@
 const Ventas = require("../models/ventas.model")
 let wrapAsync = require("../middlewares/wrapAsync.mw")
+const logger = require("../logger"); //npm i log4js
 
 // #region FIND ALL
 exports.findAllVentas = wrapAsync(async function(req,res){

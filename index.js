@@ -1,5 +1,4 @@
 // logger
-const { writteErrorLog } = require("./middlewares/msg.log.error");
 const logger = require("./logger"); //npm i log4js
 const fs = require("fs");
 
